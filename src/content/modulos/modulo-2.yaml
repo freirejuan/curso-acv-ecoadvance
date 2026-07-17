@@ -1,0 +1,23 @@
+numero: 2
+slug: modulo-2
+titulo: "Metodología de Análisis de Ciclo de Vida (ACV)"
+subtitulo: "Metodología, datos, herramientas y aplicación práctica"
+fechas: "29 de julio (miércoles) · 30 de julio (jueves) · 4 de agosto (martes)"
+sesiones: "Tres sesiones"
+acento: ambar
+descripcion: >-
+  En este módulo profundizas en la metodología del ACV, tanto a nivel
+  conceptual como aplicado, siguiendo el marco de las normas ISO 14040 e
+  ISO 14044. Recorres las cuatro fases metodológicas del ACV, prestando
+  especial atención a las decisiones clave que condicionan la calidad y
+  utilidad de un estudio, así como a la calidad de los datos y las fuentes
+  de información disponibles.
+contenidos:
+  - "Marco normativo ISO 14040/14044"
+  - "Definición de objetivo y alcance"
+  - "Inventario de ciclo de vida"
+  - "Evaluación de impactos"
+  - "Interpretación de resultados"
+  - "Calidad de datos y fuentes de información"
+recursos: []
+presentaciones: []

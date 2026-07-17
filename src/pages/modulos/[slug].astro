@@ -1,0 +1,96 @@
+---
+import Base from '../../layouts/Base.astro';
+import TarjetaRecurso from '../../components/TarjetaRecurso.astro';
+import Placeholder from '../../components/Placeholder.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const modulos = await getCollection('modulos');
+  return modulos.map((m) => ({
+    params: { slug: m.data.slug },
+    props: { modulo: m },
+  }));
+}
+
+const { modulo } = Astro.props;
+const d = modulo.data;
+
+const todos = (await getCollection('modulos')).sort(
+  (a, b) => a.data.numero - b.data.numero
+);
+const anterior = todos.find((m) => m.data.numero === d.numero - 1);
+const siguiente = todos.find((m) => m.data.numero === d.numero + 1);
+---
+<Base
+  title={`Módulo ${d.numero} — ${d.titulo} · Curso Virtual de ACV`}
+  description={`${d.subtitulo}. Módulo ${d.numero} del Curso Virtual de Análisis de Ciclo de Vida — EcoAdvance Ecuador.`}
+  current="modulo"
+>
+  <section class="hero page-header">
+    <div class="container on-dark">
+      <p class="breadcrumb"><a href="/#programa">← Volver al programa</a></p>
+      <div class="badges">
+        <span class="badge badge-mod">Módulo {d.numero} de 5</span>
+        <span class="badge badge-fecha">📅 {d.fechas}</span>
+        <span class="badge badge-fecha">{d.sesiones}</span>
+      </div>
+      <h1>{d.titulo}</h1>
+      <p class="sub">{d.subtitulo}</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-bottom:56px">
+    <div class="container">
+      <p class="kicker">Sobre este módulo</p>
+      <div class="prose">
+        <p>{d.descripcion}</p>
+      </div>
+      <h2 style="font-size:1.375rem; margin-top:36px">Contenidos</h2>
+      <ul class="lista-tema">
+        {d.contenidos.map((c) => <li>{c}</li>)}
+      </ul>
+    </div>
+  </section>
+
+  <section class="section section-tint" style="padding-top:64px; padding-bottom:64px">
+    <div class="container">
+      <p class="kicker">Materiales</p>
+      <h2>Recursos</h2>
+      <div class="prose">
+        <p>
+          Selección comentada de lecturas y materiales para profundizar en los contenidos
+          del módulo, a tu propio ritmo.
+        </p>
+      </div>
+      {d.recursos.length > 0
+        ? d.recursos.map((r, i) => <TarjetaRecurso recurso={r} numero={i + 1} />)
+        : <Placeholder tipo="recursos" />}
+
+      <h2 style="margin-top:56px">Presentaciones</h2>
+      {d.presentaciones.length > 0
+        ? d.presentaciones.map((r, i) => <TarjetaRecurso recurso={r} numero={i + 1} />)
+        : <Placeholder tipo="presentaciones" />}
+    </div>
+  </section>
+
+  <section class="container">
+    <nav class="mod-nav" aria-label="Navegación entre módulos" style="border-top:none; margin-top:0; padding-top:0; padding-bottom:64px">
+      <div>
+        {anterior && (
+          <a href={`/modulos/${anterior.data.slug}/`}>
+            <span class="dir">← Módulo anterior</span>
+            {anterior.data.titulo}
+          </a>
+        )}
+      </div>
+      <div style="text-align:right">
+        {siguiente && (
+          <a href={`/modulos/${siguiente.data.slug}/`}>
+            <span class="dir">Módulo siguiente →</span>
+            {siguiente.data.titulo}
+          </a>
+        )}
+      </div>
+    </nav>
+  </section>
+</Base>

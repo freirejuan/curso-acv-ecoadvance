@@ -1,0 +1,157 @@
+---
+import Base from '../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+
+const modulos = (await getCollection('modulos')).sort(
+  (a, b) => a.data.numero - b.data.numero
+);
+const acentoClass: Record<string, string> = {
+  verde: '',
+  ambar: 'acento-ambar',
+  naranja: 'acento-naranja',
+};
+---
+<Base
+  title="Curso Virtual de Análisis de Ciclo de Vida — EcoAdvance Ecuador"
+  description="Repositorio y guía del Curso Virtual de Análisis de Ciclo de Vida (ACV) para funcionarios públicos ecuatorianos. Proyecto EcoAdvance — GIZ. Del 28 de julio al 18 de agosto de 2026."
+  current="home"
+>
+  <!-- HERO -->
+  <section class="hero hero-pad">
+    <div class="container on-dark">
+      <p class="kicker">EcoAdvance Ecuador · GIZ</p>
+      <h1>Curso Virtual de Análisis de Ciclo de Vida</h1>
+      <p class="lead">
+        Fortalece tus conocimientos y capacidades en Análisis de Ciclo de Vida (ACV)
+        para aplicar este enfoque en tu trabajo diario: en la formulación de políticas
+        públicas, en el desarrollo de instrumentos de sostenibilidad y en los procesos
+        de toma de decisiones de tu institución.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-light" href="#programa">Ver el programa</a>
+        <a class="btn btn-outline-light" href="/proyecto-ecoadvance/">Conocer el proyecto EcoAdvance</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- OBJETIVOS -->
+  <section class="section" id="objetivos">
+    <div class="container">
+      <p class="kicker">Objetivos del curso</p>
+      <h2>Qué habrás logrado al finalizar</h2>
+      <ul class="lista-check">
+        <li>
+          Adquirido una <strong>comprensión sólida</strong> de los principios, la metodología,
+          las aplicaciones y las herramientas del Análisis de Ciclo de Vida.
+        </li>
+        <li>
+          Comprendido su relación con el <strong>ecoetiquetado</strong>, las
+          <strong>compras públicas sostenibles</strong> y la <strong>economía circular</strong>.
+        </li>
+        <li>
+          Desarrollado una visión práctica de cómo el enfoque de ciclo de vida puede apoyar
+          la <strong>toma de decisiones</strong> y el diseño de políticas e instrumentos de
+          sostenibilidad en Ecuador.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- METODOLOGÍA -->
+  <section class="section section-tint" id="metodologia">
+    <div class="container">
+      <p class="kicker">Metodología</p>
+      <h2>Aprendizaje contextualizado y orientado a la práctica</h2>
+      <div class="prose">
+        <p>
+          Cada sesión combina exposición conceptual, ejemplos aplicados a sectores
+          estratégicos ecuatorianos, estudios de caso y espacios de interacción directa
+          con la facilitadora para resolver dudas, con el fin de garantizar un aprendizaje
+          contextualizado y orientado a la práctica institucional.
+        </p>
+        <p>
+          Al inicio del curso se aplica una breve <strong>evaluación de entrada</strong>, que permite
+          conocer tu perfil y nivel de conocimiento previo y adaptar el curso a las
+          necesidades reales del grupo. Además de las sesiones en vivo, cuentas con
+          materiales y recursos adicionales —disponibles en esta web— para reforzar los
+          contenidos a tu propio ritmo.
+        </p>
+      </div>
+      <div class="meta-grid">
+        <div class="meta-item">
+          <div class="label">Fechas</div>
+          <div class="value">28 de julio – 18 de agosto de 2026</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Modalidad</div>
+          <div class="value">Virtual sincrónica</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Horario</div>
+          <div class="value">15:00 – 17:00 h</div>
+        </div>
+        <div class="meta-item">
+          <div class="label">Sesiones</div>
+          <div class="value">En vivo, de 2 horas</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMA -->
+  <section class="section" id="programa">
+    <div class="container">
+      <p class="kicker">Programa</p>
+      <h2>Cinco módulos secuenciales</h2>
+      <div class="prose">
+        <p>
+          Partiendo del marco conceptual más amplio, el curso profundiza en el núcleo
+          metodológico del ACV y se cierra con una mirada integradora hacia la
+          sostenibilidad, las aplicaciones para la gestión pública, el contexto
+          ecuatoriano y las perspectivas futuras. En la página de cada módulo
+          encontrarás su descripción, contenidos, recursos y presentaciones.
+        </p>
+      </div>
+
+      <div class="grid-modulos">
+        {modulos.map((m) => (
+          <a class={`card-modulo ${acentoClass[m.data.acento]}`} href={`/modulos/${m.data.slug}/`}>
+            <p class="kicker">Módulo {m.data.numero}</p>
+            <h3>{m.data.titulo}</h3>
+            <p class="sub">{m.data.subtitulo}</p>
+            <p class="fechas">📅 {m.data.fechas}</p>
+            <span class="acceder">Acceder →</span>
+          </a>
+        ))}
+      </div>
+
+      <div class="card-cierre">
+        <p class="kicker">Cierre del curso · 21 de agosto (viernes)</p>
+        <p style="margin:0">
+          El curso culmina con un <strong>acto de cierre presencial y simbólico</strong>, en el
+          que se hace entrega de los certificados a los y las participantes.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER ECOADVANCE -->
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="banner-eco">
+        <div>
+          <p class="kicker" style="color:#9fd8bd">El proyecto detrás del curso</p>
+          <h2>EcoAdvance: etiquetado y compras públicas sostenibles</h2>
+          <p>
+            Este curso forma parte de la estrategia de fortalecimiento de capacidades del
+            proyecto EcoAdvance, implementado por GIZ junto a PNUMA y Öko-Institut, con el
+            Ministerio de Ambiente y Energía y el SERCOP como contrapartes en Ecuador.
+          </p>
+          <div class="hero-actions" style="margin-top:24px">
+            <a class="btn btn-light" href="/proyecto-ecoadvance/">Conocer el proyecto</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

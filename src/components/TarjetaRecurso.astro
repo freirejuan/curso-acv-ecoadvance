@@ -1,0 +1,63 @@
+---
+interface Recurso {
+  titulo: string;
+  tipo: 'pdf' | 'enlace' | 'video' | 'presentacion';
+  fuente?: string;
+  descripcion?: string;
+  porque?: string;
+  url?: string;
+  estado: 'disponible' | 'proximamente';
+}
+interface Props {
+  recurso: Recurso;
+  numero: number;
+}
+const { recurso, numero } = Astro.props;
+
+const tipoLabel: Record<string, string> = {
+  pdf: 'PDF',
+  enlace: 'Enlace',
+  video: 'Vídeo',
+  presentacion: 'Presentación',
+};
+const ctaLabel: Record<string, string> = {
+  pdf: 'Abrir PDF',
+  enlace: 'Visitar recurso',
+  video: 'Ver vídeo',
+  presentacion: 'Abrir presentación',
+};
+const externo = recurso.url?.startsWith('http');
+---
+<article class="recurso">
+  <span class="num" aria-hidden="true">{numero}</span>
+  <div class="tags">
+    <span class="badge badge-tipo">{tipoLabel[recurso.tipo]}</span>
+  </div>
+  <h3>{recurso.titulo}</h3>
+  {recurso.fuente && <p class="fuente">{recurso.fuente}</p>}
+  {recurso.descripcion && <p>{recurso.descripcion}</p>}
+  {recurso.porque && (
+    <div class="porque">
+      <strong>¿Por qué este recurso?</strong> {recurso.porque}
+    </div>
+  )}
+  {recurso.url && (
+    <a
+      class="btn btn-primary"
+      href={recurso.url}
+      target={externo ? '_blank' : undefined}
+      rel={externo ? 'noopener noreferrer' : undefined}
+    >
+      {ctaLabel[recurso.tipo]}{externo && <span aria-hidden="true"> ↗</span>}
+      {externo && <span class="sr-only"> (se abre en una ventana nueva)</span>}
+    </a>
+  )}
+</article>
+
+<style>
+  .sr-only {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+</style>

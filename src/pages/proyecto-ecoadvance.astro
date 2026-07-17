@@ -1,0 +1,117 @@
+---
+import Base from '../layouts/Base.astro';
+
+const ods = [
+  { num: 5, file: '/ods/ods-05.png', alt: 'ODS 5 — Igualdad de género' },
+  { num: 12, file: '/ods/ods-12.png', alt: 'ODS 12 — Producción y consumo responsables' },
+  { num: 13, file: '/ods/ods-13.png', alt: 'ODS 13 — Acción por el clima' },
+  { num: 15, file: '/ods/ods-15.png', alt: 'ODS 15 — Vida de ecosistemas terrestres' },
+  { num: 17, file: '/ods/ods-17.png', alt: 'ODS 17 — Alianzas para lograr los objetivos' },
+];
+---
+<Base
+  title="El proyecto EcoAdvance · Curso Virtual de ACV"
+  description="EcoAdvance impulsa las ecoetiquetas y las compras públicas sostenibles en México, Costa Rica, Colombia, Ecuador y Brasil. Conoce el proyecto que organiza el Curso Virtual de ACV."
+  current="ecoadvance"
+>
+  <section class="hero page-header">
+    <div class="container on-dark">
+      <p class="breadcrumb"><a href="/">← Volver al curso</a></p>
+      <p class="kicker">El proyecto</p>
+      <h1>EcoAdvance</h1>
+      <p class="sub">Etiquetado y compras públicas sostenibles</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="prose">
+        <p>
+          El proyecto EcoAdvance busca impulsar las ecoetiquetas (EL) y las compras
+          públicas sostenibles (CPS) para avanzar hacia un sistema de oferta y demanda
+          que contribuya a la mitigación del cambio climático, la protección de la
+          biodiversidad y la conservación de los recursos.
+        </p>
+        <p>
+          Las compras públicas representan entre un 15&nbsp;% y un 20&nbsp;% de los presupuestos
+          nacionales, por lo que cuentan con la capacidad de influenciar significativamente
+          los mercados e incentivar una transición hacia patrones de consumo y producción
+          sostenibles (ODS&nbsp;12). Las EL y las CPS funcionan como herramientas para
+          incentivar a los actores relevantes a transformar estos patrones hacia modelos
+          más sostenibles, de una manera justa y equitativa, con sensibilidad de género.
+        </p>
+
+        <h2 style="margin-top:44px">Cuatro componentes</h2>
+        <ol>
+          <li>Aumento en la ambición de los esquemas de ecoetiquetado.</li>
+          <li>Fortalecimiento del marco político y legal para las CPS y el EL.</li>
+          <li>Aumento en la oferta y la demanda de productos sostenibles y con ecoetiquetado.</li>
+          <li>Intercambio de experiencias regional y global.</li>
+        </ol>
+        <p>
+          A esto se suman tres ejes transversales: género, apoyo a pequeñas y medianas
+          empresas, y fortalecimiento de capacidades.
+        </p>
+        <p>
+          El trabajo se realiza a nivel nacional y regional en México, Costa Rica,
+          Colombia, Ecuador y Brasil, en conjunto con la Alianza Ambiental de América
+          (AAA), iniciativa de ecoetiqueta regional, y con el respaldo del Programa de
+          Información al Consumidor de la Red One Planet y otras redes regionales y
+          globales clave.
+        </p>
+        <p>
+          El proyecto es implementado por un consorcio entre GIZ, PNUMA y el
+          Öko-Institut, junto con las instituciones rectoras e implementadoras de CPS y
+          ecoetiquetado en cada país. En el caso de Ecuador, las contrapartes son el
+          Ministerio de Ambiente y Energía (MAE) y el Servicio Nacional de Contratación
+          Pública (SERCOP).
+        </p>
+
+        <h2 style="margin-top:44px">El curso, dentro del proyecto</h2>
+        <p>
+          El fortalecimiento de capacidades técnicas en metodologías de evaluación
+          ambiental constituye un elemento clave para la formulación de políticas
+          públicas, la implementación de instrumentos de sostenibilidad (CPS y
+          ecoetiquetado) y el desarrollo de mecanismos de información ambiental para
+          productos y servicios. En este contexto, EcoAdvance busca fortalecer las
+          capacidades técnicas de funcionarios y técnicos de instituciones públicas
+          ecuatorianas (MAE, INEN, SAE, MPCEI, SERCOP) involucradas en el desarrollo de
+          políticas, normativas y mecanismos relacionados con sostenibilidad,
+          ecoetiquetado y compras públicas sostenibles.
+        </p>
+        <div class="callout">
+          Este curso de Análisis de Ciclo de Vida (ACV) responde precisamente a ese
+          fortalecimiento de capacidades: dota a los equipos técnicos de una herramienta
+          metodológica clave para sustentar, con enfoque de ciclo de vida, tanto el
+          ecoetiquetado como las compras públicas sostenibles.
+        </div>
+      </div>
+
+      <h2 style="margin-top:56px">El proyecto contribuye a los siguientes Objetivos de Desarrollo Sostenible</h2>
+      <div class="ods-grid">
+        {ods.map((o) => (
+          <img src={o.file} alt={o.alt} loading="lazy" width="140" height="140" />
+        ))}
+      </div>
+
+      <h2 style="margin-top:56px">Para saber más</h2>
+      <ul style="max-width:var(--maxw-prose)">
+        <li style="margin-bottom:10px">
+          <a href="https://www.giz.de/en/projects/fomentar-patrones-de-consumo-y-produccion-mas-sostenibles-traves-de-ecoadvance" target="_blank" rel="noopener noreferrer">
+            EcoAdvance en el sitio de GIZ ↗
+          </a>
+        </li>
+        <li style="margin-bottom:10px">
+          <a href="/materiales/ecoadvance/giz2024-es-eco-advance-bmuv.pdf">
+            Ficha regional del proyecto (PDF, 2024)
+          </a>
+        </li>
+        <li>
+          <a href="https://www.giz.de/en/projects/german-contribution-green-transition-latin-america-and-caribbean-team-europe-initiative" target="_blank" rel="noopener noreferrer">
+            Proyecto relacionado: contribución alemana a la transición verde en América Latina y el Caribe ↗
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</Base>

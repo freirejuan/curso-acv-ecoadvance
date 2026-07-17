@@ -1,0 +1,14 @@
+---
+interface Props {
+  tipo: 'recursos' | 'presentaciones';
+}
+const { tipo } = Astro.props;
+const texto =
+  tipo === 'recursos'
+    ? 'Los recursos de este módulo se publicarán aquí tras la sesión correspondiente.'
+    : 'Las presentaciones utilizadas en las sesiones se publicarán aquí tras cada sesión.';
+---
+<div class="recurso proximamente">
+  <div class="tags"><span class="badge badge-prox">⏳ Próximamente</span></div>
+  <p>{texto}</p>
+</div>

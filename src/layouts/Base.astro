@@ -1,0 +1,72 @@
+---
+import '@fontsource-variable/inter';
+import '@fontsource-variable/fraunces';
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  current?: string; // 'home' | 'ecoadvance' | 'modulo'
+}
+const { title, description, current = 'home' } = Astro.props;
+---
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/png" href="/logos/ecoadvance.png" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_EC" />
+    <meta property="og:image" content="/logos/ecoadvance.png" />
+  </head>
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="/">
+          <img src="/logos/ecoadvance.png" alt="EcoAdvance — Etiquetado y compras públicas sostenibles" />
+          <span class="brand-title">Curso Virtual de Análisis de Ciclo de Vida</span>
+        </a>
+        <nav class="site-nav" aria-label="Navegación principal">
+          <a href="/#objetivos">Objetivos</a>
+          <a href="/#metodologia">Metodología</a>
+          <a href="/#programa">Programa</a>
+          <a href="/proyecto-ecoadvance/" aria-current={current === 'ecoadvance' ? 'page' : undefined}>Proyecto EcoAdvance</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <slot />
+    </main>
+
+    <div class="logos-strip">
+      <div class="container">
+        <p class="lema">Una iniciativa del proyecto EcoAdvance, implementado por GIZ por encargo del Gobierno Federal de Alemania (BMUV · IKI), en consorcio con PNUMA y Öko-Institut, junto a las contrapartes ecuatorianas</p>
+        <div class="logos-row">
+          <img src="/logos/bmuv.png" alt="Ministerio Federal de Medio Ambiente de Alemania (BMUV)" />
+          <img src="/logos/iki.png" alt="International Climate Initiative (IKI)" />
+          <img src="/logos/giz.png" alt="Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH" />
+          <img src="/logos/pnuma.png" alt="Programa de las Naciones Unidas para el Medio Ambiente (PNUMA)" />
+          <img src="/logos/oeko-institut.png" alt="Öko-Institut e.V." />
+          <img class="lg" src="/logos/mae.png" alt="Ministerio de Ambiente y Energía del Ecuador" />
+          <img src="/logos/sercop.png" alt="Servicio Nacional de Contratación Pública (SERCOP)" />
+          <img class="lg" src="/logos/ecoadvance.png" alt="EcoAdvance — Etiquetado y compras públicas sostenibles" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="container">
+        <span>Curso Virtual de Análisis de Ciclo de Vida · EcoAdvance Ecuador · 2026</span>
+        <span><a href="/proyecto-ecoadvance/">Sobre el proyecto EcoAdvance</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
