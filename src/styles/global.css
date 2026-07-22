@@ -118,7 +118,7 @@ ul { padding-left: 1.2em; }
 .brand img { height: 42px; width: auto; }
 .brand-title {
   font-size: .9rem; font-weight: 600; line-height: 1.25;
-  border-left: 1px solid var(--border); padding-left: 14px; max-width: 240px;
+  border-left: 1px solid var(--border); padding-left: 14px;
 }
 .site-nav { display: flex; gap: 4px; flex-wrap: wrap; }
 .site-nav a {
@@ -393,7 +393,6 @@ ul { padding-left: 1.2em; }
   .page-header { padding: 44px 0 40px; }
   .container { padding: 0 18px; }
   .site-header .container { justify-content: center; }
-  .brand-title { max-width: none; }
   .recurso { padding: 24px 20px 22px 20px; }
   .recurso .num { position: static; margin-bottom: 12px; }
   .banner-eco { padding: 34px 26px; }
