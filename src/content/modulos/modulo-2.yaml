@@ -44,8 +44,7 @@ inspirarte:
       la metodología del ACV y profundiza en su primera fase: la definición de
       objetivos y alcance, la unidad funcional y los límites del sistema.
     video:
-      tipo: iframe
-      src: "https://www.upv.es/visor/media/a807b3b0-9d24-11e7-ad73-4bd35f901b1a/c"
+      tipo: enlace
       thumb: "/thumbs/upv-objetivos.jpg"
   - titulo: "Análisis de inventario de ciclo de vida"
     url: "https://www.upv.es/visor/media/bbfd90b0-9d24-11e7-ad73-4bd35f901b1a/c"
@@ -57,8 +56,7 @@ inspirarte:
       ciclo de vida (ICV) y la asignación de cargas ambientales en sistemas
       multifuncionales.
     video:
-      tipo: iframe
-      src: "https://www.upv.es/visor/media/bbfd90b0-9d24-11e7-ad73-4bd35f901b1a/c"
+      tipo: enlace
       thumb: "/thumbs/upv-icv.jpg"
   - titulo: "Evaluación de impactos de ciclo de vida"
     url: "https://www.youtube.com/watch?v=B0NFFO3ma6w"
