@@ -18,5 +18,155 @@ contenidos:
   - "Relación con economía circular"
   - "Producción y consumo sostenibles"
   - "ODS y sostenibilidad"
-recursos: []
+
+resumen_inspirarte: "4 vídeos · ~32 min en total"
+inspirarte:
+  - titulo: "Introducción al Pensamiento de Ciclo de Vida"
+    url: "https://www.youtube.com/watch?v=XeU99VOnvrQ"
+    fuente: "Life Cycle Initiative (PNUMA) · YouTube"
+    idioma: "Español"
+    duracion: "2 min"
+    descripcion: >-
+      Presentación en video de los contenidos del curso de introducción al
+      pensamiento de ciclo de vida de la Life Cycle Initiative (PNUMA).
+    video:
+      tipo: youtube
+      src: "XeU99VOnvrQ"
+      thumb: "/thumbs/yt-XeU99VOnvrQ.jpg"
+  - titulo: "Lo sorprendente que aprendí navegando en solitario alrededor del mundo"
+    url: "https://www.ted.com/talks/dame_ellen_macarthur_the_surprising_thing_i_learned_sailing_solo_around_the_world"
+    fuente: "Ellen MacArthur · TED"
+    idioma: "EN · sub ES"
+    duracion: "17 min"
+    descripcion: >-
+      Charla TED inspiradora en la que Ellen MacArthur relata cómo su vuelta al
+      mundo en solitario, cargando todo lo que necesitaba, la llevó a repensar
+      la economía global como un sistema circular de recursos finitos.
+    video:
+      tipo: ted
+      src: "dame_ellen_macarthur_the_surprising_thing_i_learned_sailing_solo_around_the_world"
+      thumb: "/thumbs/ted-macarthur.jpg"
+  - titulo: "Explicando la economía circular: Repensar el progreso"
+    url: "https://www.ellenmacarthurfoundation.org/es/videos/explicando-la-economia-circular-repensar-el-progreso"
+    fuente: "Ellen MacArthur Foundation"
+    idioma: "Español"
+    duracion: "4 min"
+    descripcion: >-
+      Video corto en español sobre los fundamentos de la economía circular.
+    video:
+      tipo: youtube
+      src: "zCRKvDyyHmI"
+      thumb: "/thumbs/yt-zCRKvDyyHmI.jpg"
+  - titulo: "Hans Rosling y la lavadora mágica"
+    url: "https://www.ted.com/talks/hans_rosling_the_magic_washing_machine"
+    fuente: "Hans Rosling · TED"
+    idioma: "EN · sub ES"
+    duracion: "9 min"
+    descripcion: >-
+      Charla clásica de Hans Rosling sobre desarrollo, acceso a tecnología y
+      consumo de recursos — un punto de partida para pensar por qué importa el
+      ciclo de vida de los productos.
+    video:
+      tipo: ted
+      src: "hans_rosling_the_magic_washing_machine"
+      thumb: "/thumbs/ted-rosling.jpg"
+
+resumen_cursos: "3 cursos gratuitos · de ~2 h a varias semanas, a tu ritmo"
+cursos:
+  - titulo: "Introducción al Pensamiento de Ciclo de Vida"
+    url: "https://www.learnlifecycle.com/courses/copy-of-introduccion-al-pensamiento-de-ciclo-de-vida"
+    fuente: "Life Cycle Initiative (PNUMA) · learnlifecycle.com"
+    idioma: "Español"
+    coste: "Gratuito"
+    dedicacion: "~2–3 h a tu ritmo"
+    descripcion: >-
+      Curso gratuito de la Life Cycle Initiative (PNUMA), en español,
+      organizado en lecciones cortas en audio y video.
+  - titulo: "Pensamiento de Ciclo de Vida en la formulación de políticas públicas"
+    url: "https://www.learnlifecycle.com/courses/Pensamiento-de-Ciclo-de-Vida-en-formulacion-de-politicas-publicas"
+    fuente: "Life Cycle Initiative (PNUMA) · learnlifecycle.com"
+    idioma: "Español"
+    coste: "Gratuito"
+    dedicacion: "~2–3 h a tu ritmo"
+    descripcion: >-
+      Curso gratuito de la Life Cycle Initiative centrado en la aplicación del
+      enfoque de ciclo de vida en el diseño de políticas públicas.
+  - titulo: "Circular Economy: An Introduction"
+    url: "https://www.edx.org/learn/circular-economy/delft-university-of-technology-circular-economy-an-introduction"
+    fuente: "TU Delft + Ellen MacArthur Foundation · edX"
+    idioma: "EN"
+    coste: "Gratuito (auditoría)"
+    dedicacion: "Varias semanas, a tu ritmo"
+    descripcion: >-
+      Curso gratuito (modalidad auditoría) de TU Delft, co-creado con la Ellen
+      MacArthur Foundation, sobre los principios y modelos de negocio de la
+      economía circular.
+
+referencias:
+  - items:
+      - titulo: "Life Cycle Initiative"
+        url: "https://www.lifecycleinitiative.org/"
+        tipo: "Entidad"
+        descripcion: >-
+          Sitio oficial de la iniciativa de PNUMA y SETAC para la difusión del
+          pensamiento y la gestión de ciclo de vida: noticias, publicaciones y
+          red global de práctica.
+      - titulo: "UNEP Background Report for a Guide to Life Cycle Management"
+        url: "https://www.lifecycleinitiative.org/wp-content/uploads/2013/09/UNEP_Background_document_LCM_2006_Febr.pdf"
+        tipo: "Informe · PDF"
+        idioma: "EN"
+        dedicacion: "~1 h"
+        descripcion: >-
+          Informe técnico de PNUMA sobre Gestión de Ciclo de Vida (LCM), con un
+          marco de niveles de madurez para su implementación en organizaciones.
+      - titulo: "Life Cycle Management (LCA Compendium, Springer)"
+        url: "https://link.springer.com/book/10.1007/978-94-017-7221-1"
+        tipo: "Libro · acceso abierto"
+        idioma: "EN"
+        descripcion: >-
+          Libro de acceso abierto (Sonnemann & Margni, eds., 2015) sobre
+          Gestión de Ciclo de Vida, publicado junto con la conferencia
+          internacional LCM 2015; complementa el informe de PNUMA sobre el
+          mismo tema.
+      - titulo: "Life Cycle Approaches — The Road from Analysis to Practice"
+        url: "https://www.lifecycleinitiative.org/wp-content/uploads/2012/12/2005%20-%20LCA.pdf"
+        tipo: "Guía · PDF"
+        idioma: "EN"
+        dedicacion: "~45 min"
+        descripcion: >-
+          Guía de PNUMA y SETAC con una introducción conceptual al pensamiento
+          de ciclo de vida y su aplicación práctica.
+      - titulo: "Life Cycle Thinking in Latin America"
+        url: "https://www.lifecycleinitiative.org/wp-content/uploads/2015/01/LCA-LCM-company-case-studies-in-Latin-America.pdf"
+        tipo: "Informe · PDF"
+        idioma: "EN"
+        dedicacion: "~30 min"
+        descripcion: >-
+          Informe de la Life Cycle Initiative con 12 casos de empresas
+          latinoamericanas y su nivel de madurez en la aplicación del
+          pensamiento y la gestión de ciclo de vida.
+      - titulo: "¿Qué es la economía circular?"
+        url: "https://www.ellenmacarthurfoundation.org/es/temas/presentacion-economia-circular/vision-general"
+        tipo: "Web"
+        dedicacion: "~10 min"
+        descripcion: >-
+          Explicación de referencia de la Ellen MacArthur Foundation sobre los
+          principios de la economía circular, con el diagrama de mariposa.
+      - titulo: "Hacia una economía circular: motivos económicos para una transición acelerada"
+        url: "https://archive.ellenmacarthurfoundation.org/assets/downloads/publications/Executive_summary_SP.pdf"
+        tipo: "Informe · PDF"
+        dedicacion: "~20 min"
+        descripcion: >-
+          Resumen ejecutivo en español de la Ellen MacArthur Foundation sobre
+          el argumento económico para la transición hacia una economía circular.
+      - titulo: "Global Circularity Protocol for Business (GCP)"
+        url: "https://www.wbcsd.org/actions/global-circularity-protocol-for-business-gcp/"
+        tipo: "Marco de referencia"
+        idioma: "EN"
+        descripcion: >-
+          Marco de referencia lanzado en noviembre de 2025 por WBCSD y One
+          Planet Network en la COP30, con más de 150 expertos y 80
+          organizaciones, para medir y gestionar la circularidad empresarial de
+          forma armonizada a nivel global.
+
 presentaciones: []

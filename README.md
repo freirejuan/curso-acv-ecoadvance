@@ -15,28 +15,42 @@ organizado por el proyecto EcoAdvance (GIZ) para funcionarios públicos ecuatori
 3. Al guardar, Cloudflare construye y publica la web en `https://<nombre>.pages.dev`.
    Cada `git push` a `main` la actualiza automáticamente en ~1 minuto.
 
-## Cómo añadir recursos o presentaciones tras cada sesión (~10 min)
+## Cómo añadir una presentación tras cada sesión (~10 min)
 
-1. Si el material es un PDF propio, cópialo a `public/materiales/modulo-N/`
-   (crea la carpeta si no existe; nombre en minúsculas y sin espacios).
-2. Edita `src/content/modulos/modulo-N.yaml` y añade una entrada en `recursos:`
-   o `presentaciones:`. Ejemplo:
+1. Copia el PDF a `public/materiales/modulo-N/` (crea la carpeta si no
+   existe; nombre en minúsculas y sin espacios).
+2. Edita `src/content/modulos/modulo-N.yaml` y añade una entrada en
+   `presentaciones:`. Ejemplo:
 
 ```yaml
-recursos:
-  - titulo: "Life Cycle Thinking: una introducción"
-    tipo: pdf            # pdf | enlace | video | presentacion
-    fuente: "PNUMA (2021)"
-    descripcion: "Guía introductoria que presenta el enfoque de ciclo de vida con ejemplos aplicados."
-    porque: "Es la puerta de entrada más clara al tema antes de la sesión."   # opcional
-    url: "/materiales/modulo-1/lct-introduccion.pdf"   # o URL externa https://…
+presentaciones:
+  - titulo: "Sesión 2.1 — Marco normativo y objetivo y alcance"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 29 de julio"
+    url: "/materiales/modulo-2/sesion-2-1.pdf"
     estado: disponible
 ```
 
-3. Guarda, haz commit y push. La web se actualiza sola.
+3. Guarda, haz commit y push. La web se actualiza sola en ~1 minuto.
 
-Mientras un módulo no tenga entradas en `recursos:`/`presentaciones:`, la web
-muestra automáticamente el aviso "Próximamente — disponible tras la sesión".
+Mientras un módulo no tenga entradas en `presentaciones:`, la web muestra
+automáticamente el aviso "Próximamente — disponible tras la sesión".
+
+## Estructura de los recursos de cada módulo
+
+Cada `modulo-N.yaml` tiene tres listas de recursos ya cargadas:
+
+- `inspirarte:` — vídeos con reproductor embebido. Campos: `titulo`, `url`,
+  `fuente`, `descripcion`, `idioma`, `duracion` y `video:` con `tipo`
+  (youtube | ted | iframe | enlace), `src` (id de YouTube, slug de TED o URL
+  a insertar) y `thumb` (miniatura en `public/thumbs/`).
+- `cursos:` — cursos e-learning. Campos extra: `coste` y `dedicacion`.
+- `referencias:` — lista de grupos; cada grupo tiene `titulo` (opcional),
+  `plegable: true|false` y sus `items` (con `tipo`, `idioma` y `dedicacion`
+  opcionales).
+
+Las líneas-resumen de sección se editan en `resumen_inspirarte` y
+`resumen_cursos`.
 
 ## Desarrollo local (opcional)
 

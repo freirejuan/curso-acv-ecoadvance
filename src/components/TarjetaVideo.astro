@@ -1,0 +1,90 @@
+---
+interface Video {
+  tipo: 'youtube' | 'ted' | 'iframe' | 'enlace';
+  src?: string;
+  thumb?: string;
+}
+interface Item {
+  titulo: string;
+  url: string;
+  fuente?: string;
+  descripcion?: string;
+  idioma?: string;
+  duracion?: string;
+  video?: Video;
+}
+interface Props {
+  item: Item;
+}
+const { item } = Astro.props;
+const v = item.video;
+
+let embedSrc: string | null = null;
+if (v?.tipo === 'youtube' && v.src) {
+  embedSrc = `https://www.youtube-nocookie.com/embed/${v.src}?autoplay=1&rel=0`;
+} else if (v?.tipo === 'ted' && v.src) {
+  embedSrc = `https://embed.ted.com/talks/lang/es/${v.src}`;
+} else if (v?.tipo === 'iframe' && v.src) {
+  embedSrc = v.src;
+}
+---
+<article class="recurso video-card">
+  {v?.thumb && (
+    <div class="video-thumb">
+      <img src={v.thumb} alt="" loading="lazy" />
+      {embedSrc ? (
+        <button
+          type="button"
+          class="video-facade"
+          data-embed={embedSrc}
+          data-title={item.titulo}
+          aria-label={`Reproducir vídeo: ${item.titulo}`}
+        >
+          <span class="play-circle" aria-hidden="true"></span>
+          {item.duracion && <span class="video-dur">{item.duracion}</span>}
+        </button>
+      ) : (
+        <a
+          class="video-facade video-linkout"
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Ver el vídeo en la fuente original: ${item.titulo}`}
+        >
+          <span class="play-circle" aria-hidden="true"></span>
+          {item.duracion && <span class="video-dur">{item.duracion}</span>}
+        </a>
+      )}
+    </div>
+  )}
+  <div class="video-body">
+    <div class="tags">
+      <span class="badge badge-tipo">Vídeo</span>
+      {item.idioma && <span class="badge badge-tipo">{item.idioma}</span>}
+      {item.duracion && <span class="badge badge-tipo">▶ {item.duracion}</span>}
+    </div>
+    <h3>
+      <a href={item.url} target="_blank" rel="noopener noreferrer" class="titulo-link">{item.titulo}</a>
+    </h3>
+    {item.fuente && <p class="fuente">{item.fuente}</p>}
+    {item.descripcion && <p class="desc">{item.descripcion}</p>}
+  </div>
+</article>
+
+<script is:inline>
+  if (!window.__videoFacade) {
+    window.__videoFacade = true;
+    document.addEventListener('click', function (e) {
+      const btn = e.target.closest('button.video-facade');
+      if (!btn) return;
+      const wrap = btn.closest('.video-thumb');
+      const iframe = document.createElement('iframe');
+      iframe.src = btn.dataset.embed;
+      iframe.title = btn.dataset.title || 'Vídeo';
+      iframe.allow = 'autoplay; fullscreen; picture-in-picture; encrypted-media';
+      iframe.allowFullscreen = true;
+      wrap.innerHTML = '';
+      wrap.appendChild(iframe);
+    });
+  }
+</script>

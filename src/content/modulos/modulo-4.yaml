@@ -17,5 +17,106 @@ contenidos:
   - "Huella hídrica"
   - "Análisis de Costo de Ciclo de Vida"
   - "Análisis de Ciclo de Vida Social"
-recursos: []
+
+resumen_inspirarte: "2 vídeos · ~4 min en total"
+inspirarte:
+  - titulo: "Nono te explica qué es la Huella de Carbono"
+    url: "https://www.youtube.com/watch?v=sq4_3xFXbKQ"
+    fuente: "Ministerio del Ambiente de Perú (MINAM) · YouTube"
+    idioma: "Español"
+    duracion: "2 min"
+    descripcion: >-
+      Video animado de la campaña oficial "Huella de Carbono Perú" del
+      Ministerio del Ambiente de Perú (MINAM), con apoyo de PNUD y WWF,
+      protagonizado por Nono, un oso de anteojos que explica el concepto de
+      forma sencilla y amena.
+    video:
+      tipo: youtube
+      src: "sq4_3xFXbKQ"
+      thumb: "/thumbs/yt-sq4_3xFXbKQ.jpg"
+  - titulo: "How Your T-Shirt Can Make a Difference"
+    url: "https://www.youtube.com/watch?v=xEExMcjSkwA"
+    fuente: "National Geographic + WWF · YouTube"
+    idioma: "EN"
+    duracion: "2 min"
+    descripcion: >-
+      Video de National Geographic en colaboración con WWF que explica la
+      huella hídrica a través del ejemplo concreto y memorable de una camiseta
+      de algodón (2.700 litros de agua).
+    video:
+      tipo: youtube
+      src: "xEExMcjSkwA"
+      thumb: "/thumbs/yt-xEExMcjSkwA.jpg"
+
+resumen_cursos: "1 curso gratuito en español"
+cursos:
+  - titulo: "Implementación de Programas Nacionales Voluntarios de Huella de Carbono"
+    url: "https://www.learningfornature.org/es/courses/implementation-of-national-voluntary-carbon-footprint-programmes-in-latin-america-nvcfp/"
+    fuente: "PNUD (Climate Promise) · Learning for Nature"
+    idioma: "Español"
+    coste: "Gratuito"
+    dedicacion: "A tu ritmo"
+    descripcion: >-
+      Curso gratuito del PNUD (Climate Promise), en español, sobre el diseño e
+      implementación de programas nacionales de huella de carbono.
+
+referencias:
+  - items:
+      - titulo: "GHG Protocol"
+        url: "https://ghgprotocol.org/"
+        tipo: "Entidad"
+        idioma: "EN"
+        descripcion: >-
+          Estándar internacional de referencia para la contabilidad y el
+          reporte de emisiones de gases de efecto invernadero (huella de
+          carbono).
+      - titulo: "Water Footprint Network"
+        url: "https://www.waterfootprint.org/"
+        tipo: "Entidad"
+        idioma: "EN"
+        descripcion: >-
+          Organización de referencia para la metodología y el cálculo de la
+          huella hídrica de productos, empresas y países.
+      - titulo: "Programa Ecuador Carbono Cero (PECC)"
+        url: "https://www.ambienteyenergia.gob.ec/ambiente/programa-ecuador-carbono-cero/"
+        tipo: "Programa"
+        descripcion: >-
+          Programa del Ministerio de Ambiente para la cuantificación,
+          reducción y neutralización de la huella de carbono en Ecuador.
+      - titulo: "Guidelines for Social Life Cycle Assessment of Products and Organizations"
+        url: "https://www.unep.org/resources/report/guidelines-social-life-cycle-assessment-products"
+        tipo: "Guía"
+        idioma: "EN"
+        dedicacion: "~1 h"
+        descripcion: >-
+          Guía de referencia de PNUMA para la metodología del Análisis de Ciclo
+          de Vida Social (ACV-S).
+      - titulo: "Pilot Projects on Guidelines for Social Life Cycle Assessment of Products and Organizations 2022"
+        url: "https://www.lifecycleinitiative.org/library/pilot-projects-on-guidelines-for-social-life-cycle-assessment-of-products-and-organizations-2022/"
+        tipo: "Informe"
+        idioma: "EN"
+        dedicacion: "~45 min"
+        descripcion: >-
+          Informe de la Life Cycle Initiative y la Social LCA Alliance con 9
+          casos reales de aplicación de las directrices UNEP 2020 de ACV
+          Social, en sectores como automotriz, alimentario, cosmética y metales.
+      - titulo: "Life Cycle Sustainability Assessment (LCSA): A comprehensive overview of existing integrated approaches to LCA, S-LCA, and LCC"
+        url: "http://ecsdev.org/ojs/index.php/ejsd/article/view/1743"
+        tipo: "Artículo"
+        idioma: "EN"
+        dedicacion: "~40 min"
+        descripcion: >-
+          Artículo revisado por pares y de acceso abierto (Bruno, Menichini &
+          Silvestri, 2025) que revisa 66 estudios sobre cómo integrar ACV,
+          Costeo de Ciclo de Vida y ACV Social en un marco único de LCSA.
+      - titulo: "Life Cycle Sustainability Assessment — ScienceDirect Topics"
+        url: "https://www.sciencedirect.com/topics/earth-and-planetary-sciences/life-cycle-sustainability-assessment"
+        tipo: "Web"
+        idioma: "EN"
+        dedicacion: "~15 min"
+        descripcion: >-
+          Página de acceso libre con una síntesis clara y accesible del
+          concepto de LCSA, como primera lectura antes de profundizar en la
+          bibliografía técnica.
+
 presentaciones: []

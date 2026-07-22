@@ -1,0 +1,29 @@
+---
+interface Item {
+  titulo: string;
+  url: string;
+  fuente?: string;
+  descripcion?: string;
+  idioma?: string;
+  coste?: string;
+  dedicacion?: string;
+}
+interface Props {
+  item: Item;
+}
+const { item } = Astro.props;
+---
+<article class="recurso curso-card">
+  <div class="tags">
+    <span class="badge badge-tipo">Curso</span>
+    {item.idioma && <span class="badge badge-tipo">{item.idioma}</span>}
+    {item.coste && <span class="badge badge-tipo">{item.coste}</span>}
+    {item.dedicacion && <span class="badge badge-tipo">🕐 {item.dedicacion}</span>}
+  </div>
+  <h3>{item.titulo}</h3>
+  {item.fuente && <p class="fuente">{item.fuente}</p>}
+  {item.descripcion && <p>{item.descripcion}</p>}
+  <a class="btn btn-primary" href={item.url} target="_blank" rel="noopener noreferrer">
+    Ir al curso <span aria-hidden="true">↗</span>
+  </a>
+</article>

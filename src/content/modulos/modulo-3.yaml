@@ -17,5 +17,219 @@ contenidos:
   - "Software especializado, con prácticas y ejercicios"
   - "Estudios de caso"
   - "Aplicaciones en sectores productivos relevantes para Ecuador"
-recursos: []
+
+resumen_inspirarte: "1 vídeo · 6 min"
+inspirarte:
+  - titulo: "Huella ambiental del café"
+    url: "https://www.youtube.com/watch?v=Dp8VWPEGoNI"
+    fuente: "YouTube"
+    idioma: "Español"
+    duracion: "6 min"
+    descripcion: >-
+      Video que ilustra la aplicación del ACV a un producto agroalimentario
+      cercano y cotidiano: el café.
+    video:
+      tipo: youtube
+      src: "Dp8VWPEGoNI"
+      thumb: "/thumbs/yt-Dp8VWPEGoNI.jpg"
+
+resumen_cursos: "1 tutorial en vídeo · 28 min"
+cursos:
+  - titulo: "Tutorial: Building a basic model in openLCA"
+    url: "https://www.youtube.com/watch?v=0GO2XV18m-4"
+    fuente: "openLCA · YouTube"
+    idioma: "EN"
+    coste: "Gratuito"
+    dedicacion: "▶ 28 min"
+    descripcion: >-
+      Video tutorial oficial de openLCA con los primeros pasos para instalar el
+      software y construir un modelo básico de ACV.
+
+referencias:
+  - titulo: "Software, bases de datos y estándares"
+    items:
+      - titulo: "openLCA"
+        url: "https://www.openlca.org/"
+        tipo: "Software"
+        idioma: "EN"
+        descripcion: >-
+          Software libre y gratuito para la realización de estudios de ACV, con
+          manuales, tutoriales en video y foro de soporte.
+      - titulo: "Brightway"
+        url: "https://docs.brightway.dev/projects/live/"
+        tipo: "Software"
+        idioma: "EN"
+        descripcion: >-
+          Framework de código abierto en Python para cálculos de ACV, cada vez
+          más usado en investigación y en la práctica profesional junto a
+          openLCA; este enlace lleva a una demo interactiva en el navegador
+          (JupyterLite) para probarlo sin instalar nada.
+      - titulo: "ecoinvent"
+        url: "https://ecoinvent.org/"
+        tipo: "Base de datos"
+        idioma: "EN"
+        descripcion: >-
+          Base de datos internacional de referencia para inventarios de ciclo
+          de vida, utilizada en estudios de ACV en todo el mundo.
+      - titulo: "GLAD — Global LCA Data Access network"
+        url: "https://www.oneplanetnetwork.org/resources-2/global-lca-data-network-glad-2/"
+        tipo: "Base de datos"
+        idioma: "EN"
+        descripcion: >-
+          El mayor directorio neutral de bases de datos de ACV del mundo,
+          custodiado por la Life Cycle Initiative/PNUMA, que facilita el acceso
+          e interoperabilidad de datos de inventario.
+      - titulo: "Hoja de ruta para la creación de bases de datos nacionales de análisis del ciclo de vida"
+        url: "https://www.lifecycleinitiative.org/wp-content/uploads/2020/06/INT_UNEP_LCA-Dev_Spanish_June-10_WEB.pdf"
+        tipo: "Guía · PDF"
+        dedicacion: "~45 min"
+        descripcion: >-
+          Guía de PNUMA (2020) con orientaciones para desarrollar bases de
+          datos nacionales de ACV, que incluye el caso de Ecuador — uno de los
+          países piloto del proyecto, junto con Uganda.
+      - titulo: "Red Ecuatoriana de Ciclo de Vida y Economía Circular (RECOVER)"
+        url: "https://www.linkedin.com/company/red-ecuatoriana-de-ciclo-de-vida-y-econom%C3%ADa-circular/"
+        tipo: "Red"
+        descripcion: >-
+          Red de 17 organizaciones (academia, centros de investigación, sector
+          empresarial) que agrupa la comunidad de práctica de ACV en Ecuador,
+          coordinada en parte desde la ESPOL y conectada con la Life Cycle
+          Initiative y la Red Iberoamericana de Ciclo de Vida.
+
+  - titulo: "Casos de aplicación en Ecuador — tesis ESPOL"
+    plegable: true
+    items:
+      - titulo: "Análisis de ciclo de vida de combustibles por proceso Fischer-Tropsch para la descarbonización en Imbabura, Ecuador"
+        url: "https://www.dspace.espol.edu.ec/handle/123456789/66365"
+        descripcion: >-
+          Caicedo Potosí, 2025 (Maestría en Sistemas de Energía) — potencial de
+          mitigación de electrocombustibles sintéticos frente a los
+          combustibles fósiles en Imbabura.
+      - titulo: "Estudio del ciclo de vida y estimación de la huella de carbono en el proceso de producción de balanceado para aves de corral del Grupo San Isidro"
+        url: "https://dspace.espol.edu.ec/handle/123456789/60905"
+        descripcion: >-
+          Gil Solís & Pazmiño Briones, 2023 (Ingeniería Agrícola y Biológica) —
+          ACV y huella de carbono de la producción de balanceado avícola.
+      - titulo: "Comparación del desempeño ambiental de diferentes frutas del género Musa: Cavendish, Golden Beauty y Maricongo"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/52706"
+        descripcion: >-
+          Veliz Ibarra, 2021 (Maestría en Ecoeficiencia Industrial) — desempeño
+          ambiental de variedades de banano en Los Ríos y Cotopaxi.
+      - titulo: "Análisis de ciclo de vida de un ascensor electrónico \"tipo montaplatos\" construido por una empresa ecuatoriana en Guayaquil"
+        url: "https://dspace.espol.edu.ec/xmlui/handle/123456789/52704?locale=es"
+        descripcion: >-
+          Torres Gavilanes, 2021 (Maestría en Ecoeficiencia Industrial) — ACV
+          aplicado a un producto industrial ecuatoriano.
+      - titulo: "Desempeño ambiental de tubería de PVC corrugada de doble pared y tubería de PVC de perfil cerrado con sello elastomérico en Ecuador"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/52703"
+        descripcion: >-
+          Salgado Herrera, 2021 (Maestría en Ecoeficiencia Industrial) —
+          comparación ambiental de dos productos de PVC para agua.
+      - titulo: "Análisis del ciclo de vida de un relleno sanitario en la sierra ecuatoriana: ¿beneficio ambiental de la recuperación de biogás?"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/52617"
+        descripcion: >-
+          Meléndrez Palma, 2021 (Maestría en Ecoeficiencia Industrial) —
+          evaluación de la recuperación de biogás para generación eléctrica.
+      - titulo: "Desempeño ambiental de la producción de arroz pilado en la provincia del Guayas"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/52615"
+        descripcion: >-
+          Piedra Rivas & Quimí Martínez, 2021 (Maestría en Ecoeficiencia
+          Industrial) — desempeño ambiental de las etapas agrícola e industrial
+          del arroz.
+      - titulo: "Desempeño Ambiental del Cemento y del Concreto en el Ecuador: una puerta a la construcción sostenible"
+        url: "https://www.dspace.espol.edu.ec/handle/123456789/52614"
+        descripcion: >-
+          Petroche Sánchez, 2021 (Maestría en Ecoeficiencia Industrial) —
+          puntos críticos ambientales de la cadena de clinker, cemento y
+          concreto premezclado.
+      - titulo: "Evaluación del desempeño ambiental de la producción de carne de cerdo en una granja y una planta de faenamiento en Santa Elena"
+        url: "https://www.dspace.espol.edu.ec/handle/123456789/52613"
+        descripcion: >-
+          Pazmiño Sánchez, 2021 (Maestría en Ecoeficiencia Industrial) — ACV de
+          la producción porcina desde la cuna hasta el sacrificio.
+      - titulo: "Análisis de ciclo de vida del camarón cultivado de la especie Litopenaeus vannamei en la provincia del Guayas"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/52611"
+        descripcion: >-
+          Moreira Zambrano & Bastidas Sánchez, 2021 (Maestría en Ecoeficiencia
+          Industrial) — desempeño ambiental del principal producto
+          agroalimentario de exportación de Ecuador.
+      - titulo: "Análisis de ciclo de vida comparativo de un sistema de pesca artesanal versus industrial en la provincia de Santa Elena"
+        url: "https://www.dspace.espol.edu.ec/handle/123456789/52610"
+        descripcion: >-
+          Montenegro Yagual & Montenegro Yagual, 2021 (Maestría en
+          Ecoeficiencia Industrial) — comparación de escenarios de preservación
+          en la actividad pesquera.
+      - titulo: "Cuantificación del desempeño ambiental de la producción de maracuyá en una finca de Santa Elena"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/51510"
+        descripcion: >-
+          Miranda Rodríguez, 2020 (Maestría en Ciencias Ambientales) —
+          desempeño ambiental de la producción de maracuyá desde una
+          perspectiva de ciclo de vida.
+      - titulo: "Evaluación de Impactos Ambientales de una Carretera desde una perspectiva de ciclo de vida"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/51496"
+        descripcion: >-
+          Valle Gómez, 2020 (Maestría en Gestión Ambiental) — comparación de
+          carretera de hormigón asfáltico versus hormigón hidráulico.
+      - titulo: "Análisis de Ciclo de Vida de la varilla de Acero SAE 1029 producida en Guayaquil"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/38792"
+        descripcion: >-
+          Pontón Tomaselli, 2017 (Maestría en Ciencias Ambientales) — impactos
+          ambientales de la producción de varilla de acero para construcción,
+          según ISO 14040/14044.
+      - titulo: "Análisis de Ciclo de Vida de la Producción Industrial de una cerveza tipo Lager envasada en botella de 330 cm³ en Guayaquil"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/38765"
+        descripcion: >-
+          Chang Alvarado, 2017 (Maestría en Ciencias Ambientales) — ACV de la
+          producción industrial de cerveza en Guayaquil.
+      - titulo: "Análisis de Ciclo de Vida de una Vivienda de tipo media en la ciudad de Guayaquil"
+        url: "https://www.dspace.espol.edu.ec/xmlui/handle/123456789/34268"
+        descripcion: >-
+          Crespo León, 2016 (Maestría en Ciencias Ambientales) — desempeño
+          ambiental de una vivienda residencial tipo en Guayaquil.
+
+  - titulo: "Casos de aplicación internacionales"
+    items:
+      - titulo: "Huella de carbono de la cadena de suministro del banano"
+        url: "https://www.fao.org/world-banana-forum/projects/good-practices/carbon-footprint/es/"
+        tipo: "Caso"
+        dedicacion: "~15 min"
+        descripcion: >-
+          Estudio de caso del Foro Mundial Bananero (FAO) sobre la huella de
+          carbono del banano de exportación en Ecuador, el mayor exportador
+          mundial.
+      - titulo: "Single-use plastic bags and their alternatives: Recommendations from Life Cycle Assessments"
+        url: "https://www.lifecycleinitiative.org/single-use-plastic-bags-and-their-alternatives-recommendations-from-life-cycle-assessments/"
+        tipo: "Informe"
+        idioma: "EN"
+        dedicacion: "~30 min"
+        descripcion: >-
+          Meta-análisis de PNUMA/Life Cycle Initiative (2020) de 7 estudios de
+          ACV que comparan bolsas plásticas de un solo uso con sus alternativas.
+      - titulo: "Single-use plastic bottles and their alternatives: Recommendations from Life Cycle Assessments"
+        url: "https://www.lifecycleinitiative.org/library/single-use-plastic-bottles-and-their-alternatives-recommendations-from-life-cycle-assessments/"
+        tipo: "Informe"
+        idioma: "EN"
+        dedicacion: "~30 min"
+        descripcion: >-
+          Meta-análisis equivalente de PNUMA (2020) centrado en botellas
+          plásticas de un solo uso y sus alternativas.
+      - titulo: "Single-use supermarket food packaging and its alternatives: Recommendations from Life Cycle Assessments"
+        url: "https://www.lifecycleinitiative.org/library/single-use-supermarket-food-packaging-and-its-alternatives-recommendations-from-life-cycle-assessments/"
+        tipo: "Informe"
+        idioma: "EN"
+        dedicacion: "~45 min"
+        descripcion: >-
+          Meta-análisis de PNUMA (2022) de 33 estudios de ACV sobre envases de
+          alimentos de supermercado, organizados en tres arquetipos:
+          refrigerados, frescos y de despensa.
+      - titulo: "Addressing single-use plastic products pollution using a life cycle approach"
+        url: "https://www.lifecycleinitiative.org/library/addressing-single-use-plastic-products-pollution-using-a-life-cycle-approach/"
+        tipo: "Informe"
+        idioma: "EN"
+        dedicacion: "~30 min"
+        descripcion: >-
+          Informe "paraguas" de PNUMA que sintetiza la serie de meta-análisis
+          de ACV sobre plásticos de un solo uso (bolsas, botellas, envases de
+          alimentos).
+
 presentaciones: []

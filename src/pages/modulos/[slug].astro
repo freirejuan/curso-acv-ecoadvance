@@ -1,5 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
+import TarjetaVideo from '../../components/TarjetaVideo.astro';
+import TarjetaCurso from '../../components/TarjetaCurso.astro';
+import GrupoReferencias from '../../components/GrupoReferencias.astro';
 import TarjetaRecurso from '../../components/TarjetaRecurso.astro';
 import Placeholder from '../../components/Placeholder.astro';
 import { getCollection } from 'astro:content';
@@ -20,6 +23,10 @@ const todos = (await getCollection('modulos')).sort(
 );
 const anterior = todos.find((m) => m.data.numero === d.numero - 1);
 const siguiente = todos.find((m) => m.data.numero === d.numero + 1);
+
+const hayInspirarte = d.inspirarte.length > 0;
+const hayCursos = d.cursos.length > 0;
+const hayReferencias = d.referencias.length > 0;
 ---
 <Base
   title={`Módulo ${d.numero} — ${d.titulo} · Curso Virtual de ACV`}
@@ -39,8 +46,15 @@ const siguiente = todos.find((m) => m.data.numero === d.numero + 1);
     </div>
   </section>
 
-  <section class="section" style="padding-bottom:56px">
+  <section class="section" style="padding-bottom:56px" id="contenidos">
     <div class="container">
+      <nav class="subnav" aria-label="Secciones del módulo">
+        <a href="#contenidos">Contenidos</a>
+        {hayInspirarte && <a href="#inspirarte">Para inspirarte</a>}
+        {(hayCursos || hayReferencias) && <a href="#profundizar">Para profundizar</a>}
+        <a href="#presentaciones">Presentaciones</a>
+      </nav>
+
       <p class="kicker">Sobre este módulo</p>
       <div class="prose">
         <p>{d.descripcion}</p>
@@ -55,26 +69,62 @@ const siguiente = todos.find((m) => m.data.numero === d.numero + 1);
   <section class="section section-tint" style="padding-top:64px; padding-bottom:64px">
     <div class="container">
       <p class="kicker">Materiales</p>
-      <h2>Recursos</h2>
-      <div class="prose">
-        <p>
-          Selección comentada de lecturas y materiales para profundizar en los contenidos
-          del módulo, a tu propio ritmo.
-        </p>
-      </div>
-      {d.recursos.length > 0
-        ? d.recursos.map((r, i) => <TarjetaRecurso recurso={r} numero={i + 1} />)
-        : <Placeholder tipo="recursos" />}
 
-      <h2 style="margin-top:56px">Presentaciones</h2>
-      {d.presentaciones.length > 0
-        ? d.presentaciones.map((r, i) => <TarjetaRecurso recurso={r} numero={i + 1} />)
-        : <Placeholder tipo="presentaciones" />}
+      {hayInspirarte && (
+        <div id="inspirarte">
+          <h2>Para inspirarte</h2>
+          <p class="resumen-seccion">
+            Vídeos y píldoras breves para abrir la mirada antes de la sesión.
+            {d.resumen_inspirarte && <strong> {d.resumen_inspirarte}</strong>}
+          </p>
+          {d.inspirarte.map((item) => <TarjetaVideo item={item} />)}
+        </div>
+      )}
+
+      {(hayCursos || hayReferencias) && (
+        <div id="profundizar">
+          <h2 style={hayInspirarte ? 'margin-top:64px' : ''}>Para profundizar</h2>
+          <p class="resumen-seccion">
+            Cursos e-learning y referencias para seguir aprendiendo a tu ritmo.
+          </p>
+
+          {hayCursos && (
+            <>
+              <h3 style="margin-top:32px; margin-bottom:6px">Cursos</h3>
+              {d.resumen_cursos && (
+                <p class="resumen-seccion" style="font-size:.9375rem"><strong>{d.resumen_cursos}</strong></p>
+              )}
+              <div style="margin-top:18px">
+                {d.cursos.map((item) => <TarjetaCurso item={item} />)}
+              </div>
+            </>
+          )}
+
+          {hayReferencias && (
+            <>
+              <h3 style="margin-top:40px; margin-bottom:6px">Referencias relevantes</h3>
+              <p class="resumen-seccion" style="font-size:.9375rem; margin-bottom:18px">
+                Informes, guías y entidades de referencia, como materiales de consulta.
+              </p>
+              {d.referencias.map((g) => (
+                <GrupoReferencias titulo={g.titulo} plegable={g.plegable} items={g.items} />
+              ))}
+            </>
+          )}
+        </div>
+      )}
+
+      <div id="presentaciones">
+        <h2 style="margin-top:64px">Presentaciones</h2>
+        {d.presentaciones.length > 0
+          ? d.presentaciones.map((r, i) => <TarjetaRecurso recurso={r} numero={i + 1} />)
+          : <Placeholder tipo="presentaciones" />}
+      </div>
     </div>
   </section>
 
   <section class="container">
-    <nav class="mod-nav" aria-label="Navegación entre módulos" style="border-top:none; margin-top:0; padding-top:0; padding-bottom:64px">
+    <nav class="mod-nav" aria-label="Navegación entre módulos" style="border-top:none; margin-top:0; padding-top:36px; padding-bottom:64px">
       <div>
         {anterior && (
           <a href={`/modulos/${anterior.data.slug}/`}>

@@ -19,5 +19,115 @@ contenidos:
   - "Declaraciones Ambientales de Producto"
   - "Tendencias internacionales y oportunidades para Ecuador"
   - "Experiencias de otros países vinculando CPS y ACV"
-recursos: []
+
+resumen_inspirarte: "1 vídeo · 5 min"
+inspirarte:
+  - titulo: "APRENDE: Compras públicas sostenibles. Video 1: Sensibilización"
+    url: "https://www.youtube.com/watch?v=aWVyAPvabfw"
+    fuente: "YouTube"
+    idioma: "Español"
+    duracion: "5 min"
+    descripcion: >-
+      Video breve de sensibilización sobre qué son las compras públicas
+      sostenibles y por qué importan.
+    video:
+      tipo: youtube
+      src: "aWVyAPvabfw"
+      thumb: "/thumbs/yt-aWVyAPvabfw.jpg"
+
+cursos: []
+
+referencias:
+  - items:
+      - titulo: "A Policymakers' Guide to Life Cycle Assessment — Policy Brief"
+        url: "https://www.lifecycleinitiative.org/library/a-policymakers-guide-to-life-cycle-assessment-policy-brief/"
+        tipo: "Guía"
+        idioma: "EN"
+        dedicacion: "~20 min"
+        descripcion: >-
+          Guía de la Life Cycle Initiative (PNUMA, 2024) con cuatro criterios
+          para que los formuladores de política distingan un ACV riguroso y con
+          ejemplos reales de gobiernos que ya usan el ACV en sus políticas de
+          clima, economía circular y compras públicas.
+      - titulo: "Alianza Ambiental de América (AAA)"
+        url: "https://alianza-ambiental.org/"
+        tipo: "Entidad"
+        descripcion: >-
+          Primer programa regional de etiquetado ambiental Tipo I en América
+          Latina y el Caribe, impulsado por el proyecto EcoAdvance con
+          participación de Ecuador.
+      - titulo: "Guía para la aplicación de criterios de sostenibilidad en las compras públicas"
+        url: "https://portal.compraspublicas.gob.ec/sercop/wp-content/uploads/2025/05/gui%CC%81a_para_cps_-_nro_7_final_revisada_resolucion-signed-signed.pdf"
+        tipo: "Guía · PDF"
+        dedicacion: "~45 min"
+        descripcion: >-
+          Guía oficial del SERCOP para la incorporación de criterios
+          ambientales, sociales y económicos en la contratación pública
+          ecuatoriana.
+      - titulo: "Compras públicas sostenibles y ecoetiquetado (PNUMA)"
+        url: "https://www.unep.org/es/regiones/america-latina-y-el-caribe/iniciativas-regionales/promoviendo-la-eficiencia-de-recursos"
+        tipo: "Web"
+        descripcion: >-
+          Portal regional de PNUMA sobre compras públicas sostenibles y
+          ecoetiquetado, con recursos y comunidades de práctica.
+      - titulo: "ECO Platform"
+        url: "https://www.eco-platform.org/"
+        tipo: "Entidad"
+        idioma: "EN"
+        descripcion: >-
+          Asociación que armoniza y conecta cerca de 20 programas de
+          Declaraciones Ambientales de Producto (EPD, por sus siglas en inglés)
+          de todo el mundo bajo un formato común ("Core EPD"), funcionando como
+          la base de datos global de referencia para EPD de productos de
+          construcción.
+      - titulo: "The International EPD® System"
+        url: "https://www.environdec.com/home"
+        tipo: "Entidad"
+        idioma: "EN"
+        descripcion: >-
+          El programa de Declaraciones Ambientales de Producto (DAP/EPD) más
+          antiguo y operativo del mundo (fundado en 1998 por la Agencia Sueca
+          de Protección Ambiental), basado en las normas ISO 14025 y EN 15804.
+      - titulo: "Sustainable Public Procurement and Ecolabelling (SPPEL)"
+        url: "https://www.oneplanetnetwork.org/knowledge-centre/projects/sustainable-public-procurement-and-ecolabelling-sppel"
+        tipo: "Proyecto"
+        idioma: "EN"
+        descripcion: >-
+          Proyecto de PNUMA (2013-2017) que combinó compras públicas
+          sostenibles y ecoetiquetado (basado en ACV) en 13 países, incluido
+          Ecuador, junto con Argentina, Brasil, Chile, Colombia, Costa Rica,
+          India, Mauricio, Mongolia, Marruecos, Perú, Togo y Vietnam.
+      - titulo: "Las Compras Públicas Sostenibles en América Latina"
+        url: "https://ricg.org/wp-content/uploads/2020/02/Estudio-Las-Compras-Publicas-Sostenibles-en-Am%C3%A9rica-Latina.pdf"
+        tipo: "Informe · PDF"
+        dedicacion: "~1 h"
+        descripcion: >-
+          Estudio comparativo de PNUMA, la OEA y la Red Interamericana de
+          Compras Gubernamentales (RICG, 2011) sobre el estado de las compras
+          públicas sostenibles en distintos países de la región.
+      - titulo: "LCA and Reality (Andreas Ciroth) — openLCA.conf 2026 Keynote + Q&A"
+        url: "https://www.youtube.com/watch?v=ZGkjiwh77ec&t=264s"
+        tipo: "Vídeo"
+        idioma: "EN"
+        dedicacion: "▶ 24 min"
+        descripcion: >-
+          Conferencia magistral de openLCA.conf 2026 (GreenDelta, Berlín) en la
+          que Andreas Ciroth reflexiona críticamente sobre si el ACV logra
+          representar la realidad de forma objetiva y holística, y qué retos
+          quedan pendientes para acercar mejor los modelos a la práctica.
+      - titulo: "World Resources Institute (WRI)"
+        url: "https://es.wri.org/"
+        tipo: "Entidad"
+        descripcion: >-
+          Think tank global de investigación ambiental que analiza tendencias
+          en clima, economía circular y políticas públicas de sostenibilidad.
+      - titulo: "Trellis"
+        url: "https://trellis.net/"
+        tipo: "Medio"
+        idioma: "EN"
+        descripcion: >-
+          Medio de referencia sobre sostenibilidad empresarial y tendencias
+          globales (economía circular, reporting ESG, regulación ambiental),
+          con cobertura diaria y análisis en profundidad.
+
 presentaciones: []

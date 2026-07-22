@@ -1,0 +1,50 @@
+---
+interface Item {
+  titulo: string;
+  url: string;
+  tipo?: string;
+  idioma?: string;
+  dedicacion?: string;
+  descripcion?: string;
+}
+interface Props {
+  titulo?: string;
+  plegable?: boolean;
+  items: Item[];
+}
+const { titulo, plegable = false, items } = Astro.props;
+---
+{titulo && !plegable && <h4 class="ref-grupo-titulo">{titulo}</h4>}
+
+{plegable ? (
+  <details class="ref-plegable">
+    <summary>{titulo} — {items.length} referencias (desplegar)</summary>
+    <div class="ref-lista">
+      {items.map((r) => (
+        <div class="ref-item">
+          <div class="ref-cab">
+            <a href={r.url} target="_blank" rel="noopener noreferrer">{r.titulo}</a>
+            {r.tipo && <span class="badge badge-tipo badge-sm">{r.tipo}</span>}
+            {r.idioma && <span class="badge badge-tipo badge-sm">{r.idioma}</span>}
+            {r.dedicacion && <span class="badge badge-tipo badge-sm">{r.dedicacion}</span>}
+          </div>
+          {r.descripcion && <p>{r.descripcion}</p>}
+        </div>
+      ))}
+    </div>
+  </details>
+) : (
+  <div class="ref-lista">
+    {items.map((r) => (
+      <div class="ref-item">
+        <div class="ref-cab">
+          <a href={r.url} target="_blank" rel="noopener noreferrer">{r.titulo}</a>
+          {r.tipo && <span class="badge badge-tipo badge-sm">{r.tipo}</span>}
+          {r.idioma && <span class="badge badge-tipo badge-sm">{r.idioma}</span>}
+          {r.dedicacion && <span class="badge badge-tipo badge-sm">{r.dedicacion}</span>}
+        </div>
+        {r.descripcion && <p>{r.descripcion}</p>}
+      </div>
+    ))}
+  </div>
+)}

@@ -19,5 +19,147 @@ contenidos:
   - "Evaluación de impactos"
   - "Interpretación de resultados"
   - "Calidad de datos y fuentes de información"
-recursos: []
+
+resumen_inspirarte: "4 vídeos · ~34 min en total"
+inspirarte:
+  - titulo: "What is Life Cycle Assessment? LCA Explained with Easy Real-Life Example"
+    url: "https://www.youtube.com/watch?v=Z9V5PsY9t44"
+    fuente: "YouTube"
+    idioma: "EN"
+    duracion: "4 min"
+    descripcion: >-
+      Video breve que explica el ACV a partir de un ejemplo cotidiano, fácil de
+      seguir incluso sin dominio del inglés técnico.
+    video:
+      tipo: youtube
+      src: "Z9V5PsY9t44"
+      thumb: "/thumbs/yt-Z9V5PsY9t44.jpg"
+  - titulo: "Análisis de ciclo de vida. Definición de objetivos y alcance"
+    url: "https://www.upv.es/visor/media/a807b3b0-9d24-11e7-ad73-4bd35f901b1a/c"
+    fuente: "Universitat Politècnica de València · Polimedia"
+    idioma: "Español"
+    duracion: "10 min"
+    descripcion: >-
+      Video de la Universitat Politècnica de València (Polimedia) que explica
+      la metodología del ACV y profundiza en su primera fase: la definición de
+      objetivos y alcance, la unidad funcional y los límites del sistema.
+    video:
+      tipo: iframe
+      src: "https://www.upv.es/visor/media/a807b3b0-9d24-11e7-ad73-4bd35f901b1a/c"
+      thumb: "/thumbs/upv-objetivos.jpg"
+  - titulo: "Análisis de inventario de ciclo de vida"
+    url: "https://www.upv.es/visor/media/bbfd90b0-9d24-11e7-ad73-4bd35f901b1a/c"
+    fuente: "Universitat Politècnica de València · Polimedia"
+    idioma: "Español"
+    duracion: "10 min"
+    descripcion: >-
+      Segundo video de la serie de la UPV, centrado en la fase de inventario de
+      ciclo de vida (ICV) y la asignación de cargas ambientales en sistemas
+      multifuncionales.
+    video:
+      tipo: iframe
+      src: "https://www.upv.es/visor/media/bbfd90b0-9d24-11e7-ad73-4bd35f901b1a/c"
+      thumb: "/thumbs/upv-icv.jpg"
+  - titulo: "Evaluación de impactos de ciclo de vida"
+    url: "https://www.youtube.com/watch?v=B0NFFO3ma6w"
+    fuente: "Universitat Politècnica de València · YouTube"
+    idioma: "Español"
+    duracion: "10 min"
+    descripcion: >-
+      Tercer video de la serie de la UPV, dedicado a la fase de evaluación del
+      impacto del ciclo de vida (EICV).
+    video:
+      tipo: youtube
+      src: "B0NFFO3ma6w"
+      thumb: "/thumbs/yt-B0NFFO3ma6w.jpg"
+
+resumen_cursos: "5 cursos · de ~1,5 h a 8 semanas; cuatro con opción gratuita"
+cursos:
+  - titulo: "Life Cycle Assessment"
+    url: "https://www.coursera.org/learn/life-cycle-assessment"
+    fuente: "Universidad de Michigan · Coursera"
+    idioma: "EN · sub ES"
+    coste: "Gratuito (auditoría)"
+    dedicacion: "~12 h a tu ritmo"
+    descripcion: >-
+      Curso de la Universidad de Michigan (Coursera), impartido por Olivier
+      Jolliet, uno de los cofundadores de la Life Cycle Initiative de PNUMA.
+      Gratuito en modalidad auditoría (de pago solo si se desea certificado);
+      recorre en profundidad las cuatro fases del ACV con un ejercicio práctico
+      en SimaPro. En inglés, con subtítulos disponibles en varios idiomas,
+      incluido el español.
+  - titulo: "Sustainable innovations in enterprises: the life cycle assessment (LCA)"
+    url: "https://www.open.edu/openlearn/money-business/sustainable-innovations-enterprises/content-section-3.2.1"
+    fuente: "The Open University (Reino Unido) · OpenLearn"
+    idioma: "EN"
+    coste: "Gratuito"
+    dedicacion: "~1–2 h"
+    descripcion: >-
+      Curso gratuito de la Open University (Reino Unido), con un enfoque
+      aplicado a la toma de decisiones empresariales.
+  - titulo: "ISO 14040: Principios y marco de la evaluación del ciclo de vida"
+    url: "https://alison.com/es/curso/iso-14040-principios-y-marco-de-la-evaluacion-del-ciclo-de-vida"
+    fuente: "Alison"
+    idioma: "Español"
+    coste: "Gratuito"
+    dedicacion: "~1,5–3 h"
+    descripcion: >-
+      Curso gratuito en español (Alison) sobre los principios de la norma
+      ISO 14040 y las fases metodológicas del ACV.
+  - titulo: "Life Cycle Assessment: Quantifying Environmental Impacts"
+    url: "https://professional.mit.edu/course-catalog/life-cycle-assessment-quantifying-environmental-impacts"
+    fuente: "MIT Professional Education"
+    idioma: "EN"
+    coste: "De pago"
+    dedicacion: "8 semanas"
+    descripcion: >-
+      Curso pagado de 8 semanas siguiendo el marco ISO 14040/14044, con
+      certificado MIT. Opción avanzada para quienes busquen una certificación
+      internacional de mayor profundidad.
+  - titulo: "Life Cycle Assessment (LCA): Sustainability Principles (Part 1)"
+    url: "https://www.futurelearn.com/courses/principles-of-life-cycle-assessment-for-sustainability"
+    fuente: "Aberystwyth University · FutureLearn"
+    idioma: "EN"
+    coste: "Gratuito con acceso limitado"
+    dedicacion: "4 semanas"
+    descripcion: >-
+      Curso de 4 semanas, con opción gratuita de acceso limitado o pago único.
+      Introducción práctica al pensamiento de ciclo de vida y a las
+      herramientas de evaluación del ACV.
+
+referencias:
+  - items:
+      - titulo: "ISO 14040:2006 — Environmental management — Life cycle assessment — Principles and framework"
+        url: "https://www.iso.org/standard/37456.html"
+        tipo: "Norma"
+        idioma: "EN"
+        descripcion: >-
+          Página oficial de ISO con el resumen y alcance de la norma que
+          establece el marco de principios del ACV.
+      - titulo: "ISO 14044:2006 — Environmental management — Life cycle assessment — Requirements and guidelines"
+        url: "https://www.iso.org/standard/38498.html"
+        tipo: "Norma"
+        idioma: "EN"
+        descripcion: >-
+          Página oficial de ISO con los requisitos y directrices detalladas
+          para las cuatro fases del ACV (con enmiendas de 2017 y 2020);
+          complementa a la ISO 14040.
+      - titulo: "Environmental Life Cycle Assessment"
+        url: "https://www.taylorfrancis.com/books/oa-mono/10.1201/b19138/environmental-life-cycle-assessment-olivier-jolliet-alexandre-jolliet-shanna-shaked-pierre-crettaz-myriam-saade-sbeih"
+        tipo: "Libro · acceso abierto"
+        idioma: "EN"
+        descripcion: >-
+          Libro de texto de acceso abierto (CRC Press, 2016) sobre la
+          metodología completa del ACV, escrito por Olivier Jolliet, el mismo
+          autor del curso de Coursera recomendado en este módulo.
+      - titulo: "GLAM — Global Guidance for Life Cycle Impact Assessment Indicators and Methods"
+        url: "https://www.lifecycleinitiative.org/activities/life-cycle-assessment-data-and-methods/global-guidance-for-life-cycle-impact-assessment-indicators-and-methods-glam/"
+        tipo: "Proyecto"
+        idioma: "EN"
+        descripcion: >-
+          Proyecto de la Life Cycle Initiative (PNUMA) desde 2013, hoy en su
+          versión GLAM 1.0 (lanzada en 2024), que constituye el método de
+          referencia mundial para indicadores de evaluación de impacto en la
+          fase de EICV.
+
 presentaciones: []

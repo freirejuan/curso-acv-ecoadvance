@@ -207,6 +207,95 @@ ul { padding-left: 1.2em; }
 .recurso.proximamente { border-style: dashed; background: var(--surface-tint); box-shadow: none; padding-left: 32px; }
 .recurso.proximamente p { color: var(--ink-soft); margin: 0; }
 
+/* ---------- Mini-nav de anclas del módulo ---------- */
+.subnav { display: flex; gap: 10px; flex-wrap: wrap; margin: 0 0 44px; }
+.subnav a {
+  text-decoration: none; padding: 6px 16px; border-radius: var(--radius-pill);
+  background: var(--surface-tint); border: 1px solid var(--border);
+  color: var(--primary-dark); font-size: .8125rem; font-weight: 600;
+  letter-spacing: .05em; text-transform: uppercase;
+}
+.subnav a:hover { background: var(--success-tint); }
+
+/* ---------- Resumen de sección ---------- */
+.resumen-seccion { max-width: var(--maxw-prose); color: var(--ink-soft); }
+.resumen-seccion strong { color: var(--ink); }
+
+/* ---------- Tarjeta de vídeo (facade) ---------- */
+.video-card { padding-left: 32px; }
+.video-card .video-thumb {
+  position: relative; border-radius: 12px; overflow: hidden;
+  aspect-ratio: 16 / 9; background: #0a0a0a; margin-bottom: 20px;
+}
+.video-card .video-thumb img {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+}
+.video-facade {
+  position: absolute; inset: 0; width: 100%; height: 100%;
+  background: transparent; border: 0; cursor: pointer; padding: 0;
+  display: block;
+}
+.video-facade:hover .play-circle { background: var(--primary-dark); transform: scale(1.06); }
+.play-circle {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: 64px; height: 64px; border-radius: 50%;
+  background: rgba(12, 122, 80, .92);
+  transition: background .15s, transform .15s;
+}
+.play-circle::after {
+  content: ""; position: absolute; left: 55%; top: 50%; transform: translate(-50%, -50%);
+  width: 0; height: 0;
+  border-left: 20px solid #fff;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+.video-linkout .play-circle { background: rgba(20, 20, 15, .75); }
+.video-linkout:hover .play-circle { background: var(--primary-dark); }
+.video-dur {
+  position: absolute; right: 10px; bottom: 10px;
+  background: rgba(0, 0, 0, .75); color: #fff;
+  font-size: .75rem; font-weight: 600; padding: 2px 8px; border-radius: 6px;
+}
+.video-thumb iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+}
+.video-card .titulo-link { color: var(--ink); text-decoration: none; }
+.video-card .titulo-link:hover { color: var(--primary-dark); text-decoration: underline; }
+@media (min-width: 820px) {
+  .video-card { display: grid; grid-template-columns: 340px 1fr; gap: 28px; align-items: start; }
+  .video-card .video-thumb { margin-bottom: 0; }
+}
+
+/* ---------- Curso ---------- */
+.curso-card { padding-left: 32px; }
+
+/* ---------- Referencias (lista compacta) ---------- */
+.ref-grupo-titulo { margin: 36px 0 14px; font-size: 1.15rem; }
+.ref-lista {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-card); padding: 6px 28px; margin-bottom: 22px;
+}
+.ref-item { padding: 18px 0; border-bottom: 1px solid var(--border); }
+.ref-item:last-child { border-bottom: none; }
+.ref-cab { display: flex; gap: 10px; align-items: baseline; flex-wrap: wrap; }
+.ref-cab a { font-weight: 600; }
+.ref-item p { margin: 6px 0 0; font-size: .9375rem; color: var(--ink-soft); }
+.badge-sm { font-size: .6875rem; padding: 2px 10px; }
+
+/* ---------- Bloque plegable ---------- */
+.ref-plegable {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-card); padding: 4px 28px; margin: 36px 0 22px;
+}
+.ref-plegable summary {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.15rem;
+  color: var(--primary-dark); cursor: pointer; padding: 16px 0;
+  list-style-position: outside;
+}
+.ref-plegable summary:hover { color: var(--primary); }
+.ref-plegable .ref-lista { border: none; padding: 0 0 10px; margin: 0; }
+.ref-plegable[open] summary { border-bottom: 1px solid var(--border); margin-bottom: 6px; }
+
 /* ---------- Callout ---------- */
 .callout {
   border-left: 3px solid var(--primary); background: var(--surface-tint);
