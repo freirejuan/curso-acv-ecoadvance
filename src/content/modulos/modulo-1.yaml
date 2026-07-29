@@ -71,7 +71,7 @@ inspirarte:
       src: "hans_rosling_the_magic_washing_machine"
       thumb: "/thumbs/ted-rosling.jpg"
 
-resumen_cursos: "3 cursos gratuitos · de ~2 h a varias semanas, a tu ritmo"
+resumen_cursos: "4 cursos gratuitos · de ~2 h a varias semanas, a tu ritmo"
 cursos:
   - titulo: "Introducción al Pensamiento de Ciclo de Vida"
     url: "https://www.learnlifecycle.com/courses/copy-of-introduccion-al-pensamiento-de-ciclo-de-vida"
@@ -101,6 +101,18 @@ cursos:
       Curso gratuito (modalidad auditoría) de TU Delft, co-creado con la Ellen
       MacArthur Foundation, sobre los principios y modelos de negocio de la
       economía circular.
+  - titulo: "Introduction to the lifecycle perspective and LCA"
+    url: "https://chalmers.eu-west.catalog.canvaslms.com/browse/oocp/courses/understanding-the-life-cycle-perspective"
+    fuente: "Chalmers University of Technology (Suecia)"
+    idioma: "EN"
+    coste: "Gratuito"
+    dedicacion: "~2 h a tu ritmo"
+    descripcion: >-
+      Curso gratuito y autoguiado de la Universidad de Chalmers (Suecia), con
+      certificado de finalización. Cubre tanto el pensamiento de ciclo de vida
+      como una introducción al ACV y su aplicación práctica, orientado a
+      perfiles de sostenibilidad, desarrollo de producto y compras, tanto en
+      el sector público como en el privado.
 
 referencias:
   - items:
@@ -169,4 +181,9 @@ referencias:
           organizaciones, para medir y gestionar la circularidad empresarial de
           forma armonizada a nivel global.
 
-presentaciones: []
+presentaciones:
+  - titulo: "Sesión 1 — Pensamiento de Ciclo de Vida"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 28 de julio"
+    url: "/materiales/modulo-1/sesion-1-pensamiento-de-ciclo-de-vida.pdf"
+    estado: disponible

@@ -71,7 +71,7 @@ inspirarte:
       src: "B0NFFO3ma6w"
       thumb: "/thumbs/yt-B0NFFO3ma6w.jpg"
 
-resumen_cursos: "5 cursos · de ~1,5 h a 8 semanas; cuatro con opción gratuita"
+resumen_cursos: "4 cursos · de ~1–2 h a 8 semanas; tres con opción gratuita"
 cursos:
   - titulo: "Life Cycle Assessment"
     url: "https://www.coursera.org/learn/life-cycle-assessment"
@@ -95,15 +95,6 @@ cursos:
     descripcion: >-
       Curso gratuito de la Open University (Reino Unido), con un enfoque
       aplicado a la toma de decisiones empresariales.
-  - titulo: "ISO 14040: Principios y marco de la evaluación del ciclo de vida"
-    url: "https://alison.com/es/curso/iso-14040-principios-y-marco-de-la-evaluacion-del-ciclo-de-vida"
-    fuente: "Alison"
-    idioma: "Español"
-    coste: "Gratuito"
-    dedicacion: "~1,5–3 h"
-    descripcion: >-
-      Curso gratuito en español (Alison) sobre los principios de la norma
-      ISO 14040 y las fases metodológicas del ACV.
   - titulo: "Life Cycle Assessment: Quantifying Environmental Impacts"
     url: "https://professional.mit.edu/course-catalog/life-cycle-assessment-quantifying-environmental-impacts"
     fuente: "MIT Professional Education"
