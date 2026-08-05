@@ -151,4 +151,40 @@ referencias:
           referencia mundial para indicadores de evaluación de impacto en la
           fase de EICV.
 
-presentaciones: []
+presentaciones:
+  - titulo: "Sesión 2 — Marco normativo y definición de objetivo y alcance"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 29 de julio"
+    descripcion: >-
+      Del pensamiento al análisis, definición y evolución del ACV, marco
+      normativo ISO 14040/14044 y primera fase metodológica: objetivos,
+      alcance, unidad funcional y límites del sistema.
+    url: "/materiales/modulo-2/sesion-2-marco-normativo-objetivo-y-alcance.pdf"
+    estado: disponible
+  - titulo: "Sesión 3 — Límites del sistema y análisis de inventario"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 30 de julio"
+    descripcion: >-
+      Requisitos de calidad de los datos, diagramas de flujo y tipos de
+      alcance (cuna a tumba, cuna a puerta, puerta a puerta), y entrada en la
+      fase de análisis de inventario (ICV).
+    url: "/materiales/modulo-2/sesion-3-limites-del-sistema-e-inventario.pdf"
+    estado: disponible
+  - titulo: "Taller relámpago — ¿Cuál es el impacto ambiental del consumo eléctrico de nuestros hogares?"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 30 de julio"
+    descripcion: >-
+      Dinámica en equipo de la sesión 3 para aplicar el enfoque de ciclo de
+      vida al consumo eléctrico doméstico, partiendo de la factura de la luz
+      de cada participante.
+    url: "/materiales/modulo-2/taller-relampago-consumo-electrico-hogares.pdf"
+    estado: disponible
+  - titulo: "Sesión 4 — Inventario, evaluación de impactos e interpretación"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 4 de agosto"
+    descripcion: >-
+      Bases de datos y calidad de los datos de inventario, categorías de
+      impacto y métodos de evaluación (CML, ReCiPe, EF y GLAM), y la fase de
+      interpretación de resultados para la toma de decisiones.
+    url: "/materiales/modulo-2/sesion-4-inventario-impactos-e-interpretacion.pdf"
+    estado: disponible
