@@ -232,4 +232,25 @@ referencias:
           de ACV sobre plásticos de un solo uso (bolsas, botellas, envases de
           alimentos).
 
-presentaciones: []
+presentaciones:
+  - titulo: "Sesión 6 — Datos, software y el ACV en Ecuador"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 6 de agosto"
+    descripcion: >-
+      Bases de datos de inventario y DAP, datos primarios y secundarios, el
+      software especializado (SimaPro, Sphera/GaBi, openLCA, Brightway, One
+      Click LCA, Umberto), el estado del ACV en Ecuador —política pública,
+      plataforma Amaru y 11 casos en 5 sectores— y el cierre del taller
+      relámpago sobre el consumo eléctrico doméstico.
+    url: "/materiales/modulo-3/sesion-6-datos-software-y-acv-en-ecuador.pdf"
+    estado: disponible
+  - titulo: "Sesión 7 — Ejemplos de aplicación del ACV"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 11 de agosto"
+    descripcion: >-
+      Dos estudios de caso completos: el bambú-guadua, comparando los sistemas
+      de preservación convencional y ecológico con vistas al ecoetiquetado, y
+      la producción de carne de vacuno, donde la granja resulta ser el eslabón
+      crítico en ambos sistemas.
+    url: "/materiales/modulo-3/sesion-7-ejemplos-de-aplicacion-del-acv.pdf"
+    estado: disponible
