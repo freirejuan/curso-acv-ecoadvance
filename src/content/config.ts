@@ -65,6 +65,7 @@ const modulos = defineCollection({
     contenidos: z.array(z.string()),
     resumen_inspirarte: z.string().optional(),
     resumen_cursos: z.string().optional(),
+    nota_presentaciones: z.string().optional(),
     inspirarte: z.array(itemInspirarte).default([]),
     cursos: z.array(itemCurso).default([]),
     referencias: z.array(grupoReferencias).default([]),

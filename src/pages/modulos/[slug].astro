@@ -116,6 +116,9 @@ const hayReferencias = d.referencias.length > 0;
 
       <div id="presentaciones">
         <h2 style="margin-top:64px">Presentaciones</h2>
+        {d.nota_presentaciones && (
+          <p class="resumen-seccion" style="margin-bottom:18px">{d.nota_presentaciones}</p>
+        )}
         {d.presentaciones.length > 0
           ? d.presentaciones.map((r, i) => <TarjetaRecurso recurso={r} numero={i + 1} />)
           : <Placeholder tipo="presentaciones" />}
