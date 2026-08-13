@@ -141,4 +141,15 @@ referencias:
           concepto de LCSA, como primera lectura antes de profundizar en la
           bibliografía técnica.
 
-presentaciones: []
+presentaciones:
+  - titulo: "Sesión 8 — Las huellas y las otras dimensiones de la sostenibilidad"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 12 de agosto"
+    descripcion: >-
+      Qué mide cada huella y en qué se diferencian —ecológica, hídrica (agua
+      azul, verde y gris; Water Footprint Network e ISO 14046), de carbono
+      (GHG Protocol) y ambiental (PEF/OEF)—, la dimensión social del ciclo de
+      vida siguiendo las directrices UNEP-SETAC, y el cierre con la mirada
+      integral de la sostenibilidad.
+    url: "/materiales/modulo-4/sesion-8-huellas-y-dimensiones-de-la-sostenibilidad.pdf"
+    estado: disponible
