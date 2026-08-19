@@ -140,4 +140,37 @@ referencias:
           globales (economía circular, reporting ESG, regulación ambiental),
           con cobertura diaria y análisis en profundidad.
 
-presentaciones: []
+presentaciones:
+  - titulo: "Sesión 9 — El ACV en las políticas públicas y el ecoetiquetado"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 13 de agosto"
+    descripcion: >-
+      Por qué el ACV sostiene mejores políticas públicas —enfoque sistémico,
+      puntos críticos, unidad funcional y coherencia entre sectores—, su papel
+      en las Compras Públicas Sostenibles, y la introducción al ecoetiquetado
+      y la comunicación ambiental: etiquetas Tipo I, II y III y Declaraciones
+      Ambientales de Producto.
+    url: "/materiales/modulo-5/sesion-9-acv-en-politicas-publicas-y-ecoetiquetado.pdf"
+    estado: disponible
+  - titulo: "Sesión 9 — Huella de carbono del aguacate en el Ecuador"
+    tipo: presentacion
+    fuente: "Margarita Baquero (ponente invitada) · 13 de agosto"
+    descripcion: >-
+      Estudio de caso del proyecto CREA: cálculo con openLCA de la huella de
+      carbono del aguacate ecuatoriano en seis fincas, desde el vivero hasta
+      el consumo en Europa, con análisis de incertidumbre y de secuestro de
+      carbono, comparación internacional y recomendaciones para productores y
+      para la cadena de valor.
+    url: "/materiales/modulo-5/sesion-9-huella-de-carbono-del-aguacate.pdf"
+    estado: disponible
+  - titulo: "Sesión 10 — Ecoetiquetado, tendencias internacionales y oportunidades para Ecuador"
+    tipo: presentacion
+    fuente: "Beatriz Rivela · 18 de agosto"
+    descripcion: >-
+      Las Declaraciones Ambientales de Producto en detalle y los programas que
+      las gestionan, las tendencias internacionales en datos de ciclo de vida
+      (GLAD y plataformas regionales) y un cierre sobre Ecuador: más de una
+      década de avances, la reforma de 2023 en contratación pública y la hoja
+      de ruta que queda por construir.
+    url: "/materiales/modulo-5/sesion-10-ecoetiquetado-tendencias-y-oportunidades.pdf"
+    estado: disponible
